@@ -1,6 +1,6 @@
 import { useRef, useState, Suspense } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeftIcon, Loader2Icon, UploadCloud } from 'lucide-react';
+import { ArrowLeftIcon, Loader2Icon, UploadCloud, Github } from 'lucide-react';
 import Editor from '@monaco-editor/react';
 import hljs from 'highlight.js/lib/core';
 import javascript from 'highlight.js/lib/languages/javascript';
@@ -126,7 +126,18 @@ export default function ReviewPage() {
             Code Review Assistant
           </h1>
         </div>
-        <ThemeToggle />
+        <div className="flex items-center gap-2 sm:gap-4">
+          <a
+            href="https://github.com/rishabh2217/Code-Review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 text-white/90 hover:text-white transition-colors rounded-lg hover:bg-white/10"
+          >
+            <Github size={16} className="sm:w-5 sm:h-5" />
+            <span className="font-medium text-xs sm:text-sm hidden sm:inline">GitHub</span>
+          </a>
+          <ThemeToggle />
+        </div>
       </header>
 
       {/* Main Content */}

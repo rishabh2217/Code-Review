@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Github } from "lucide-react";
 import ThemeToggle from "../Theme/ThemeToggle";
 
 export default function HomePage() {
@@ -12,7 +13,18 @@ export default function HomePage() {
         <h1 className="text-2xl font-bold text-neutral-900 dark:text-white">
           Code Review Assistant
         </h1>
-        <ThemeToggle />
+        <div className="flex items-center gap-4">
+          <a
+            href="https://github.com/rishabh2217/Code-Review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors rounded-lg hover:bg-white/20 dark:hover:bg-black/20"
+          >
+            <Github size={20} />
+            <span className="font-medium">GitHub</span>
+          </a>
+          <ThemeToggle />
+        </div>
       </header>
 
       {/* Main */}
