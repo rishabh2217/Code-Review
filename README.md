@@ -207,9 +207,6 @@ Modify the `systemInstruction` in `ai.service.js` to adjust the AI's behavior, f
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🆘 Support
 
@@ -218,6 +215,7 @@ If you encounter any issues or have questions:
 1. Check the existing issues on GitHub
 2. Create a new issue with detailed information
 3. Include code examples and error messages
+
 
 ## 🙏 Acknowledgments
 
