@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+/* Full screen background image support */
+.bg-home {
+  background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Editor styles */
+.editor-container {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Custom scrollbar styling */
+@layer utilities {
+  /* Modern scrollbar utilities for Tailwind v4.1 */
+  .scrollbar-code {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #1e1e1e;
+  }
+  
+  .scrollbar-code::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .scrollbar-code::-webkit-scrollbar-track {
+    background: #1e1e1e;
+  }
+  
+  .scrollbar-code::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+  }
+  
+  .scrollbar-code::-webkit-scrollbar-thumb:hover {
+    background: #777;
+  }
+  
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f8fafc;
+  }
+  
+  .dark .scrollbar-thin {
+    scrollbar-color: #475569 #1e293b;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #f8fafc;
+  }
+  
+  .dark .scrollbar-thin::-webkit-scrollbar-track {
+    background: #1e293b;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+  }
+  
+  .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: #475569;
+  }
+}
